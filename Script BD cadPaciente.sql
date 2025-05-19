@@ -18,7 +18,7 @@ USE `cadPaciente` ;
 -- Table `cadPaciente`.`cpaPaciente`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `cadPaciente`.`cpaPaciente` (
-  `IdPaciente` INT NOT NULL,
+  `IdPaciente` INT NOT NULL AUTO_INCREMENT,
   `nmPaciente` VARCHAR(150) NOT NULL,
   `dtnascPaciente` VARCHAR(8) NOT NULL,
   `sxPaciente` VARCHAR(1) NOT NULL,
