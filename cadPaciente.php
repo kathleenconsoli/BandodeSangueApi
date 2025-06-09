@@ -27,14 +27,7 @@ $jdPaciente     = trim($jsonParam['jdPaciente'] ?? '');
 $udPaciente     = trim($jsonParam['udPaciente'] ?? '');
 $tsPaciente     = trim($jsonParam['tsPaciente'] ?? '');
 
-// Validate required fields
-if (
-    empty($nmPaciente) || empty($dtnascPaciente) || empty($sxPaciente) ||
-    empty($jdPaciente) || empty($udPaciente) || empty($tsPaciente)
-) {
-    echo json_encode(['success' => false, 'message' => 'Campos obrigatórios ausentes.']);
-    exit;
-}
+
 
 // Prepare statement
 $stmt = $con->prepare("
